@@ -18,3 +18,24 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.flag {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.country-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-weight: 300;
+  margin-left: 10px;
+  font-family: 'Cantarell';
+}
