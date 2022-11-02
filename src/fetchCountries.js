@@ -28,9 +28,9 @@ export function fetchCountries(countryName) {
           countries.forEach(property => {
             markup += `<div class="country-container">
             <img class="flag" src="${property.flags.svg}" alt= "flag of ${
-              property.name
+              property.name.common
             }"/>
-            <h1 class="country">${property.name}</h1></div>
+            <h1 class="country">${property.name.common}</h1></div>
             <h2>Capital: <span class= subtitle>${property.capital}</span><h2>
             <h2>Population: <span class= subtitle>${property.population.toLocaleString()} people</span></h2>
             <h2>Languages:  <span class= subtitle>${Object.values(
@@ -45,8 +45,8 @@ export function fetchCountries(countryName) {
           let markup = '';
           countries.forEach(country => {
             markup += `<div class="country-container">
-            <img class="flag" src="${country.flags.svg}" alt= "flag of ${country.name.official}"/>
-            <h2 class="country">${country.name.official}</h2>
+            <img class="flag" src="${country.flags.svg}" alt= "flag of ${country.name.common}"/>
+            <h2 class="country">${country.name.common}</h2>
             </div>`;
           });
           return (countryInfo.innerHTML = markup);
