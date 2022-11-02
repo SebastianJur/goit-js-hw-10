@@ -28,7 +28,7 @@ export function fetchCountries(countryName) {
           countries.forEach(property => {
             markup += `<div class="country-container">
             <img class="flag" src="${property.flags.svg}" alt= "flag of ${
-              property.name.official
+              property.name
             }"/>
             <h1 class="country">${property.name}</h1></div>
             <h2>Capital: <span class= subtitle>${property.capital}</span><h2>
