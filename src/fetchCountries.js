@@ -30,7 +30,7 @@ export function fetchCountries(countryName) {
             <img class="flag" src="${property.flags.svg}" alt= "flag of ${
               property.name.official
             }"/>
-            <h1 class="country">${property.name.official}</h1></div>
+            <h1 class="country">${property.name}</h1></div>
             <h2>Capital: <span class= subtitle>${property.capital}</span><h2>
             <h2>Population: <span class= subtitle>${property.population.toLocaleString()} people</span></h2>
             <h2>Languages:  <span class= subtitle>${Object.values(
